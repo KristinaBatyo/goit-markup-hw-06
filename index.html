@@ -381,37 +381,52 @@
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             <form class="modal-form">
                 <div class="modal-field">
-            <label for="user-name" class="form-name">
+            <label for="user-name" class="modal-label">
                 Имя
             </label>
                 <div class="input-wrap">
-                    <input type="name" name="user-name" class="modal-input" id="user-name"/>
+                    <input type="name" name="user-name" class="modal-input" id="user-name" required/>
             <svg class="input-icon" width="12" height="12">
                 <use href="./images/icons.svg#icon-Vector-01"></use>
             </svg>
         </div>
         </div>
         <div class="modal-field">
-            <label for="user-tel">
+            <label for="user-tel" class="modal-label">
                 Телефон
             </label>
-                    <input type="tel" name="user-tel" class="modal-input" id="user-tel"/>
-        </div>
+            <div class="input-wrap">
+                    <input type="tel" name="user-tel" class="modal-input" id="user-tel" required/>
+                    <svg class="input-icon" width="13" height="13">
+                        <use href="./images/icons.svg#icon-Vector-02"></use>
+                    </svg>
+                </div>
+            </div>
         <div class="modal-field">
-            <label for="user-email">
+            <label for="user-email" class="modal-label">
                 Почта 
-            </label>       
-                    <input type="email" name="user-email" class="modal-input" id="user-email"/>
+            </label>   
+            <div class="input-wrap">   
+                    <input type="email" name="user-email" class="modal-input" id="user-email" required/>
+                    <svg class="input-icon" width="15" height="12">
+                        <use href="./images/icons.svg#icon-Vector-03"></use>
+                    </svg>
         </div>
-        <div class="modal-field">
-            <label for="other-text">
+    </div> 
+        <div class="modal-field coments">
+            <label for="other-text" class="modal-label">
                 Комментарий
             </label>
-                    <textarea name="other-text" class="modal-input-text" id="other-text" placeholder="Введите текст"></textarea>
+                    <textarea name="modal-text" class="modal-text-area modal-input" id="other-text" placeholder="Введите текст"></textarea>
                     </div>
-            
-                    <input type="checkbox" name="hobby" value="music" class="chek-form"  /> <span class="form-text-doc"> Соглашаюсь с рассылкой и принимаю <a href="" class="link-doc">Условия договора </span> </a> 
-            
+
+                    <div class="modal-field-check">
+                    <input type="checkbox" name="privacy"  id="privacy" class=" input-check visually-hidden "  /> 
+                    <label for="privacy" class="check-text">
+                        
+                     Соглашаюсь с рассылкой и принимаю&nbsp; <a href="" class="link-doc">Условия договора  </a> 
+                </label>
+                </div>
 
                 <button type="submit" class="button form-button">Отправить</button>
             </form>
