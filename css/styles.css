@@ -440,7 +440,7 @@ color: var(--primary-text-color);
 .benefits-soc-icon {
     fill: currentColor;
 }
-.benefits-soc-icon:hover {
+.modal-close-btn:hover {
     color: var(--accent-color);
 }
 
